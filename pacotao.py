@@ -14,24 +14,23 @@
 
 #Vai ser um repositor de supermercado para os caras que colocam o estoque
 
+meu_dicionario = dict()
+
 while True:
     try:
-        meu_dicionario = dict()
-        menu = int(input('bem vindo ao programa de estoque de profuto\n 1 para adicionar, 2 para revisar, 3 para excluir, 0 para sair'))
+        menu = int(input('\nBem vindo(a) ao PaCoTãO\n Seu carrinho online\n\n Digite:\n (1) Para adicionar um produto\n (2) Para revisar suas compras\n (3) Para remover algum produto\n (0) Para sair'))
         while menu == 1:
-            
             produto = str(input("qual o nome do produto\n digite 0 pra sair"))
             if produto == '0':
                 break
             valor = int(input("o avalor do produto"))
             meu_dicionario[produto] = valor
-            print(meu_dicionario,)
+            print(meu_dicionario)
             
             
         if menu == 2:
             print(meu_dicionario)
-        else:
-            True
+       
 
         while menu == 3:
             print(meu_dicionario)
@@ -50,8 +49,8 @@ while True:
         print('type errssos')   
     except NameError:
         print('name error')
-    except:KeyError
-    print('não encontrado')
+    except KeyError:
+        print("existe esse produto ou o carrinho está vazio")
 
 
 
