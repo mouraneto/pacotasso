@@ -13,33 +13,46 @@
 #Deverá ser feito com até duas pessoas
 
 #Vai ser um repositor de supermercado para os caras que colocam o estoque
+import time
+#from pprint import pprint
 
-meu_dicionario = dict()
+estoque = {}
 
 while True:
     try:
-        menu = int(input('\nBem vindo(a) ao PaCoTãO\n Seu carrinho online\n\n Digite:\n (1) Para adicionar um produto\n (2) Para revisar suas compras\n (3) Para remover algum produto\n (0) Para sair'))
+        menu = int(input('\nBem vindo(a) ao PaCoTãO\n Seu estoque online\n\n Digite:\n (1) Para adicionar um produto\n (2) Para revisar suas compras\n (3) Para remover algum produto\n (4) Para limpar o estoque \n(0) Para sair\n-->'))
         while menu == 1:
-            produto = str(input("qual o nome do produto\n digite 0 pra sair"))
+            
+            produto = str(input("Digite o nome do produto:"))
             if produto == '0':
                 break
-            valor = int(input("o avalor do produto"))
-            meu_dicionario[produto] = valor
-            print(meu_dicionario)
+            valor = int(input("Digite a quantidade do produto:"))
+            estoque[produto] = valor
+            print(estoque)
+
             
             
         if menu == 2:
-            print(meu_dicionario)
+            for i in estoque.keys():
+                print(i + estoque.values())
+            time.sleep(2)
        
 
         while menu == 3:
-            print(meu_dicionario)
-            produto = str(input('qual prooduto'))
-            del meu_dicionario[produto]
+            print(estoque)
+            produto = str(input('Digite o nome do produto que deseja excluir:'))
+            del estoque[produto]
+        
+        if menu == 4:
+            menu = input('Tem certeza? (Digite (0)')
+            if menu == '0':
+                 estoque.clear()
+            print('Agora seu estoque está vazio')
+            time.sleep(2)
 
         
         if menu == 0:
-            print('obrigado por usar o programa')
+            print('Obrigado por usar o PaCoTãO')
             break
         
 
@@ -50,7 +63,8 @@ while True:
     except NameError:
         print('name error')
     except KeyError:
-        print("existe esse produto ou o carrinho está vazio")
+        print("não existe esse produto ou o estoque está vazio")
+        time.sleep(1)
 
 
 
