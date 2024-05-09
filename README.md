@@ -13,8 +13,10 @@ isso é o que precisa ter:
 🆗Repetições com: while ou for
 
 🆗Uma forma de estrutura de dados: lista, tupla, dicionário ou conjunto
-Criar uma função (def) e utilizar no programa
-Deverá ser feita uma apresentação com slides contando um pouco do problema que deseja resolver e também demonstrar a utilização do programa para a turma. O trabalho deverá ser enviado também através do github (enviando o link do repositório).
+
+❌Criar uma função (def) e utilizar no programa
+
+❌Deverá ser feita uma apresentação com slides contando um pouco do problema que deseja resolver e também demonstrar a utilização do programa para a turma. O trabalho deverá ser enviado também através do github (enviando o link do repositório).
 
 #Data de entrega: 15/05/2024
 
