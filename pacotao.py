@@ -21,7 +21,7 @@ estoque = {}
 
 while True:
     try:
-        menu = int(input('\nBem vindo(a) ao PaCoTãO\n Seu estoque online\n\n Digite:\n (1) Para adicionar um produto\n (2) Para revisar suas compras\n (3) Para remover algum produto\n (4) Para limpar o estoque \n(0) Para sair\n-->'))
+        menu = int(input('\nBem vindo(a) ao PaCoTãO\n Seu estoque online\n\n Digite:\n (1) Para adicionar um produto\n (2) Para revisar seu estoque\n (3) Para remover algum produto\n (4) Para limpar o estoque \n(0) Para sair\n-->'))
         while menu == 1:
             
             produto = str(input("Digite o nome do produto:(aperte '0' para sair)\n"))
