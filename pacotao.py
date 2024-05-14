@@ -44,6 +44,14 @@ while True:
             for i in estoque.keys():
                 print(i)
             time.sleep(2)
+            def total_produtos(estoque):
+                total=0
+                for quantidade in estoque.values():
+                    total+= quantidade
+                return total
+            quantidade_total = total_produtos(estoque)
+            print("Quantidade total de produtos:", quantidade_total)
+            time.sleep(2)
             input('Tecla enter para continuar')
             os.system('cls')
             
