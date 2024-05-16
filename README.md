@@ -1,23 +1,5 @@
-Esse é o projeto de programação do professor Thiago, na aula de introdução à programação.
+Esse é o programa pacotão se o programa de estoque ele é feito em Python para ajudar os supermercados a ter o controle dos seus produtos
 
-isso é o que precisa ter:
+que possui 4 opções adicionar, apagar, limpar o terminal e para revisar os produtos.
 
-#Para este trabalho deverá ser desenvolvido um programa em python contendo os seguintes itens:
-
-🆗Variáveis
-
-🆗Entrada de dados utilizando a função input
-
-🆗Condições com: if, elif ou else
-
-🆗Repetições com: while ou for
-
-🆗Uma forma de estrutura de dados: lista, tupla, dicionário ou conjunto
-
-❌Criar uma função (def) e utilizar no programa
-
-❌Deverá ser feita uma apresentação com slides contando um pouco do problema que deseja resolver e também demonstrar a utilização do programa para a turma. O trabalho deverá ser enviado também através do github (enviando o link do repositório).
-
-#Data de entrega: 15/05/2024
-
-#Deverá ser feito com até duas pessoas
+Ele usa um dicionário para guardar os valores dos produtos e a quantidade deles
