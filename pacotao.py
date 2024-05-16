@@ -1,21 +1,6 @@
-#Para este trabalho deverá ser desenvolvido um programa em python contendo os seguintes itens:
-
-# Variáveis
-# Entrada de dados utilizando a função input
-# Condições com: if, elif ou else
-# Repetições com: while ou for
-# Uma forma de estrutura de dados: lista, tupla, dicionário ou conjunto
-# Criar uma função (def) e utilizar no programa
-# Deverá ser feita uma apresentação com slides contando um pouco do problema que deseja resolver e também demonstrar a utilização do programa para a turma. O trabalho deverá ser enviado também através do github (enviando o link do repositório).
-
-#Data de entrega: 15/05/2024
-
-#Deverá ser feito com até duas pessoas
-
-#Vai ser um repositor de supermercado para os caras que colocam o estoque
 import time
 import os
-#from pprint import pprint
+
 
 estoque = {}
 
@@ -60,7 +45,7 @@ while True:
         while menu == 3:
             os.system('cls')
             print(estoque)
-            produto = str(input('Digite o nome do produto que deseja excluir:'))
+            produto = str(input('Digite o nome do produto que deseja excluir: (Para sair, pressione Enter)'))
             del estoque[produto]
             
         
@@ -90,8 +75,3 @@ while True:
     except KeyError:
         print("não existe esse produto ou o estoque está vazio")
         time.sleep(1)
-
-
-
-
-
